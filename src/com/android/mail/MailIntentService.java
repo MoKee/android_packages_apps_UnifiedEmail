@@ -119,7 +119,8 @@ public class MailIntentService extends IntentService {
     }
 
     public static void broadcastBackupDataChanged(final Context context) {
-        final Intent intent = new Intent(ACTION_BACKUP_DATA_CHANGED);
+        Intent intent = new Intent(ACTION_BACKUP_DATA_CHANGED);
+        intent.setPackage("com.android.mail");
         context.startService(intent);
     }
 
