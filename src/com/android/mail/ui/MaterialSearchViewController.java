@@ -192,6 +192,7 @@ public class MaterialSearchViewController implements
         final int statusBarColor = useDefaultColor ? R.color.mail_activity_status_bar_color :
                 R.color.search_status_bar_color;
         ViewUtils.setStatusBarColor(mActivity, statusBarColor);
+        ViewUtils.setNavigationBarColor(mActivity, statusBarColor);
 
         // Specific actions for each view state
         if (onlyActionBar) {
