@@ -103,4 +103,17 @@ public class ViewUtils {
             }
         }
     }
+
+    /**
+     * Sets the status bar color of the provided activity.
+     */
+    @SuppressLint("NewApi")
+    public static void setNavigationBarColor(Activity activity, @ColorRes int colorId) {
+        if (Utils.isRunningLOrLater() && activity != null) {
+            final Window window = activity.getWindow();
+            if (window != null) {
+                window.setNavigationBarColor(activity.getResources().getColor(colorId));
+            }
+        }
+    }
 }

@@ -196,6 +196,9 @@ public class MaterialSearchViewController implements ViewMode.ModeChangeListener
         final int statusBarColor = useDefaultColor ? R.color.mail_activity_status_bar_color :
                 R.color.search_status_bar_color;
         ViewUtils.setStatusBarColor(mActivity, statusBarColor);
+        final int navigationBarColor = useDefaultColor ? R.color.primary_dark_color :
+                R.color.search_status_bar_color;
+        ViewUtils.setNavigationBarColor(mActivity, navigationBarColor);
 
         // Specific actions for each view state
         if (onlyActionBar) {

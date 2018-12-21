@@ -499,11 +499,13 @@ public class MailActivity extends AbstractMailActivity implements ControllableAc
     public void onSupportActionModeStarted(ActionMode mode) {
         super.onSupportActionModeStarted(mode);
         ViewUtils.setStatusBarColor(this, R.color.action_mode_statusbar_color);
+        ViewUtils.setNavigationBarColor(this, R.color.action_mode_statusbar_color);
     }
 
     @Override
     public void onSupportActionModeFinished(ActionMode mode) {
         super.onSupportActionModeFinished(mode);
         ViewUtils.setStatusBarColor(this, R.color.mail_activity_status_bar_color);
+        ViewUtils.setNavigationBarColor(this, R.color.mail_activity_status_bar_color);
     }
 }
